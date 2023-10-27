@@ -1,0 +1,16 @@
+.posts {
+  display: grid;
+  grid-template-columns: repeat(3, 371px);
+  column-gap: 29px;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 56px 0 62px;
+
+  @media screen and (max-width: 1199.98px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 0px;
+    row-gap: 40px;
+    padding: 50px 10px;
+  }
+}

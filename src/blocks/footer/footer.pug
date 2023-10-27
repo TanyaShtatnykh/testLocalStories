@@ -1,0 +1,25 @@
+mixin footer(modifier)
+  section.footer&attributes(attributes)
+    .footer__main
+      .footer__menu
+        +list("Information", ["The brand", "Local stores", "Customer service", "Privacy & cookies", "Site map"], ["#", "#", "#", "#", "#"])
+        +list("Why buy from us", ["Shipping & returns", "Secure shopping", "Testimonials", "Award winning", "Ethical trading"], ["#", "#", "#", "#", "#"])
+        +list("Your account", ["Sign in", "Register", "View cart", "View your lookbook", "Track an order", "Update information"], ["#", "#", "#", "#", "#", "#"])
+        +list("Information", ["Latest posts", "Men’s lookbook", "Women’s lookbook", "Lookbooks RSS feed", "View your lookbook", "Delete your lookbook"], ["#", "#", "#", "#", "#", "#"])
+        +list("Contact details", ["Head Office: Avenue Fashion, 180-182 Regent Street, London.", "Telephone: 0123-456-789", "Email: support@yourwebsite.com"], ["#", "#", "#"])
+      .footer__wrapper
+        a.footer__block(href="#")
+          p.footer__text
+            span.footer__text-bold AWARD WINNER
+            |  FASHION AWARDS 2016
+        .footer__block 
+          a.footer__social-link(href="#"): <i class="fa-brands fa-facebook-f fa-2xl" style="color: #ffffff;"></i>
+          a.footer__social-link(href="#"): <i class="fa-brands fa-twitter fa-2xl" style="color: #ffffff;"></i>
+          a.footer__social-link(href="#"): <i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i>
+          a.footer__social-link(href="#"): <i class="fa-brands fa-pinterest fa-2xl" style="color: #ffffff;"></i>
+    .footer__bottom
+      .footer__bottom-area
+        p.footer__copyright © 2016 Avenue Fashion™
+        .footer__links
+          a.footer__link(href="#") Design by RobbyDesigns.com
+          a.footer__link(href="#") Dev by Loremipsum.com

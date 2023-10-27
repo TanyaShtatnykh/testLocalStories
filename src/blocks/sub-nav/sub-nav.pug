@@ -1,0 +1,9 @@
+mixin sub-nav(modifier)
+  .sub-nav&attributes(attributes)
+    .sub-nav__menu
+      +list("Casuals", ["Jackets", "Hoodies & Sweetshirts", "Polo Shirts", "Sportswear", "Trousers & Chinos", "T-Shirts"], ["#", "#", "#", "#", "#", "#"])
+      +list("Formal", ["Jackets", "Shirts", "Suits", "Trousers"], ["#", "#", "#", "#"])
+    a.sub-nav__banner(href="#")
+      p.sub-nav__text
+        span.footer__text-bold Autumn sale!
+          |  up to 50% off

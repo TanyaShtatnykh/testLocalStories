@@ -1,0 +1,37 @@
+mixin header(modifier)
+  header.header&attributes(attributes)
+    .header__top-area
+      .header__top-content
+        .header__top-block
+          h2.header__currency-title Currency : 
+          select.header__currency
+            option.header__currency-name(value="GBP") GBP
+        .header__top-block
+          a.header__link(href="#") Register
+          a.header__link(href="#") Sign In
+          a.header__cart(href="#") 
+            <i class="fa-sharp fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+            p.header__cart-text empty
+            <i class="fa-sharp fa-solid fa-angle-down" style="color: #ffffff;"></i>
+    .header__main-area
+      a.header__logo-link(href="#"): img.header__logo(src="img/logo.png", alt="Logo")
+      .header__burger-btn
+        .header__burger-line
+        .header__burger-line 
+        .header__burger-line
+        .header__burger-line
+      .header__menu-area
+        nav.header__menu 
+          ul.header__menu-list
+            li.header__menu-item: a.header__menu-link(href="#") Mens
+            li.header__menu-item: a.header__menu-link(href="#") Womens
+            li.header__menu-item: a.header__menu-link(href="#") The Brend
+            li.header__menu-item
+              a.header__menu-link(href="#") Local stores
+              +sub-nav
+            li.header__menu-item: a.header__menu-link(href="#") Look book
+        form.header__search-form
+          input.header__search(type="search" placeholder="Search..")
+          button.header__btn(type="button")
+            <i class="fa-solid fa-magnifying-glass" style="color: #8c8e8e;"></i>
+          

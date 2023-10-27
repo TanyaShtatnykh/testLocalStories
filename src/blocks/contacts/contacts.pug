@@ -1,0 +1,31 @@
+mixin contacts(modifier)
+  section.contacts&attributes(attributes)
+    .contacts__area
+      .contacts__block
+        img.contacts__map(src="img/map.png", alt="Map")
+        <i class="fa-solid fa-location-dot map-ic fa-lg" style="color: #00C8C8;"></i>
+      .contacts__content
+        h2.contacts__title London
+        p.contacts__subtitle 180-182 REGENT STREET, LONDON, W1B 5BT
+        p.contacts__text Lorem ipsum dolor sit amet, consectetur adipiscing esi elit. Vivamus at arcu sem. Vestibulum ornare eleifendit massa, nec tempor odio. Fusce posuere nunc iaculis ligula viverra iaculis. Aliquam erat volutpat.
+        a.contacts__link(href="#") 
+          <i class="fa-solid fa-location-dot" style="color: #8e8c8c;"></i>
+          | 180-182 Regent Street, London, W1B 5BT
+        a.contacts__link(href="tel:0123456789") 
+          <i class="fa-solid fa-phone" style="color: #8e8c8c;"></i>
+          | 0123-456-789
+        a.contacts__link(href="www.yourwebsite.com") 
+          <i class="fa-solid fa-link" style="color: #8e8c8c;"></i>
+          | www.yourwebsite.com
+        a.contacts__link(href="nailto:support@yourwebsite.com") 
+          <i class="fa-regular fa-envelope" style="color: #8e8c8c;"></i>
+          | support@yourwebsite.com
+        a.contacts__link(href="#!") 
+          <i class="fa-regular fa-clock" style="color: #8e8c8c;"></i>
+          | Monday-Friday: 9am to 6pm  Saturday: 10am to 6pm  Sunday: 10am to 2pm
+        ul.contacts__socials
+          li.contacts__socials-item: a.contacts__socials-link(href="#"): <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
+          li.contacts__socials-item: a.contacts__socials-link(href="#"): <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+          li.contacts__socials-item: a.contacts__socials-link(href="#"): <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+          li.contacts__socials-item: a.contacts__socials-link(href="#"): <i class="fa-brands fa-pinterest" style="color: #ffffff;"></i>
+

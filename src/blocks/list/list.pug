@@ -1,0 +1,6 @@
+mixin list(title, texts, links)
+  .list&attributes(attributes)
+    h2.list__title=title
+    ul.list__menu
+      each text, link in texts, links
+        li.list__item: a.list__link(href=link)=text

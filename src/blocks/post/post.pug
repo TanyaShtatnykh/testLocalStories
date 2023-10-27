@@ -1,0 +1,6 @@
+mixin post(title, subtitle, text, link)
+  article.post&attributes(attributes)
+    h2.post__title=title
+    p.post__subtitle=subtitle
+    p.post__text=text
+    a.post__link(href=link) View details

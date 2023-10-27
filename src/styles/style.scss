@@ -1,0 +1,35 @@
+@import 'mixins';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Roboto&display=swap');
+
+body, ul, ol {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+button, input {
+  font-family: 'Montserrat', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+@import './src/blocks/header/header';
+@import './src/blocks/welcome/welcome';
+@import './src/blocks/post/post';
+@import './src/blocks/posts/posts';
+@import './src/blocks/contacts/contacts';
+@import './src/blocks/list/list';
+@import './src/blocks/footer/footer';
+@import './src/blocks/sub-nav/sub-nav';
